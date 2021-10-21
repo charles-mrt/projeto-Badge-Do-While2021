@@ -68,7 +68,6 @@ function toogleThemeColor() {
         cardTransition(card = false);
     }
 
-
 }
 
 
