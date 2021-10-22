@@ -9,7 +9,7 @@ const LinksSocialMedia = {
   youtube: "charles-mrt",
   facebook: "charles-mrt",
   instagram: "charles-mrt",
-  twiiter: "charles-mrt"
+  twitter: "charles-mrt"
 }
 
 function changeSocialMediaLinks() {
@@ -23,4 +23,5 @@ function changeSocialMediaLinks() {
   }
 
 }
+
 changeSocialMediaLinks()
