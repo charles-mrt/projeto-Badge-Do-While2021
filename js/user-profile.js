@@ -1,14 +1,18 @@
+
+/**
+ *  user profile 
+ *  * **/
 const user = {
     github: "charles-mrt",
     avatar: "assets/images/github-avatar.jpg",
     bio: "Next Level Week"
 }
 
+
 /**
  * get user profile from github
  * add user profile to badge;
  * **/
-
 function getGitHubProfileInfos() {
 
     const url = `https://api.github.com/users/${user.github}`
