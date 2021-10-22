@@ -151,22 +151,19 @@ a {
     color: var(--font-color);
     text-decoration: none;
   
-    margin-top: 0.25rem;
+    margin: .25rem 0 1rem 0 ;
   
     display: flex;
-    gap: 0.75rem;
+    gap: .75rem;
   
     justify-content: center;
     align-items: center;
   }
   
-  p {
-    margin-top: 2rem;
-  }
-  p i {
+  span.user-biography i{
     margin-right: .5rem;
   }
-  
+ 
   ul {
     margin-top: 3rem;
      list-style: none;
