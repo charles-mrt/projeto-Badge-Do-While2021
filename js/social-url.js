@@ -5,8 +5,8 @@
 const LinksSocialMedia = {
   github: "charles-mrt",
   youtube: "charles-mrt",
-  facebook: "charles-mrt",
-  instagram: "charles-mrt",
+  facebook: "charles.martins.3956",
+  instagram: "charles__mrt",
   twitter: "charles-mrt"
 }
 
