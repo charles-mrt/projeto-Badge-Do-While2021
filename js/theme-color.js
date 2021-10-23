@@ -1,4 +1,8 @@
 
+// get the sword image
+const sword_image = document.querySelectorAll(".main-menu .sword");
+
+
 /**
  * set a given theme - color-scheme
  * **/
@@ -33,17 +37,32 @@ function cardTransition(card) {
     return card;
 }
 
+/**
+ *  Hide selector
+ * **/
+function hideTheSelector() {
+    sword_image.forEach((image) => {
+        image.style.visibility = 'hidden';
+    });
+}
+
+/**
+ *  sets a time to trigger a function
+ * **/
+function timeOut() {
+    setInterval(hideTheSelector, 4000);
+}
+
+
 
 /**
  *  toggle between light and dark theme
  *  style sword_light css class
  * **/
-
 function toogleThemeColor() {
 
     const sword_light = document.querySelectorAll('.main-menu .sword_light');
-    const sword_image = document.querySelectorAll(".main-menu .sword");
-
+    const switch_theme = document.querySelector('.switch-theme');
 
     localStorage.getItem('theme') === 'theme-dark'
         ? setTheme('theme-light')
@@ -58,12 +77,14 @@ function toogleThemeColor() {
         sword_light.forEach((light) => {
             light.style.width = '40%';
         });
+        
         cardTransition(card = true);
 
 
     } else {
         sword_light.forEach((light) => {
             light.style.width = '0%';
+            timeOut();
         });
         cardTransition(card = false);
     }
@@ -76,8 +97,6 @@ function toogleThemeColor() {
  * **/
 
 (function () {
-    const sword_image = document.querySelectorAll(".main-menu img");
-
     localStorage.getItem('theme') === 'theme-dark'
         ? setTheme('theme-dark')
         : setTheme('theme-light');
